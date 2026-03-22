@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://silentzone.online/sitemap.xml
+Sitemap: https://stonecurrent.site/sitemap.xml

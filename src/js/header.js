@@ -59,7 +59,7 @@ const sections = sectionIds
 const observerOptions = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.7,
+  threshold: 0.6,
 };
 
 const observer = new IntersectionObserver(entries => {
