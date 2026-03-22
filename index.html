@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stonecurrent</title>
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://stonecurrent.site" />
+    <link rel="icon" type="image/png" href="/stonecurrent/favicon.png" />
+    
+    <script type="module" crossorigin src="/stonecurrent/commonHelpers3.js"></script>
+    <link rel="modulepreload" crossorigin href="/stonecurrent/assets/header-b10aba7c.js">
+    <link rel="modulepreload" crossorigin href="/stonecurrent/assets/vendor-08b4ef8f.js">
+    <link rel="stylesheet" href="/stonecurrent/assets/header-48673978.css">
+    <link rel="stylesheet" href="/stonecurrent/assets/vendor-d9eb7f85.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <nav class="nav">
+      <a class="header-logo-link" href="./">
+        <img
+          class="header-logo-img"
+          src="data:image/png;base64,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"
+          alt="Logo"
+          width="40"
+          height="40"
+      /></a>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#about">About the Game</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#gameplay">How to Play</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#gallery">Visual</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#features">Features</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#uniqueness">Uniqueness</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#benefits">Benefits</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#faq">FAQ</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#contact">Contact</a>
+        </li>
+      </ul>
+      <button class="nav-btn" type="button" aria-label="Open mobile menu">
+        <svg class="menu-icon" width="40" height="40">
+          <use href="/stonecurrent/assets/sprite-201b558d.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <button class="close-btn" type="button" aria-label="Close mobile menu">
+        <svg class="close-icon" width="40" height="40">
+          <use href="/stonecurrent/assets/sprite-201b558d.svg#icon-close"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+    <div class="context-menu">
+  <div class="container context-container">
+    <nav class="context-nav">
+      <ul class="context-nav-list">
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#about"
+            >About the Game</a
+          >
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#gameplay"
+            >How to Play</a
+          >
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#gallery">Visual</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#features">Features</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#uniqueness"
+            >Uniqueness</a
+          >
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#benefits">Benefits</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#faq">FAQ</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+    <main>
+      <section class="section hero-section" id="home">
+  <div class="hero-bg-wrapper">
+    <div class="container hero-container">
+      <div class="hero-content-wrapper">
+        <div class="hero-text-wrapper">
+          <div class="hero-top-wrapper">
+            <h1 class="hero-main-title">
+              Guide the current.<br />
+              Shape the stone.
+            </h1>
+            <p class="hero-top-text">
+              Control the flow of ancient power, guiding it through glowing
+              stone channels
+            </p>
+          </div>
+          <div class="hero-bottom-wrapper">
+            <p class="hero-bottom-text">
+              Earth-toned palette with soft glows on runes. Strong texture and
+              depth emphasis. Calm but mysterious, guiding the player’s gaze
+              along the energy paths.
+            </p>
+            <picture>
+              <source
+                srcset="/stonecurrent/assets/hero-img-desk-893409e9.png "
+                media="(min-width: 1440px)"
+                width="460"
+                height="138" />
+              <source
+                srcset="/stonecurrent/assets/hero-img-mob-792d3654.png "
+                width="343"
+                height="138" />
+              <img
+                class="hero-img"
+                src="/stonecurrent/assets/hero-img-mob-792d3654.png"
+                alt="Screenshot of the game"
+                width="343"
+                height="138"
+            /></picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section about-section" id="about">
+  <div class="about-bg-wrapper">
+    <div class="container about-container">
+      <h2 class="section-title">About the Game</h2>
+      <p class="about-subtitle">
+        In Stonecurrent, each level presents a carved stone structure with
+        incomplete or misaligned channels.
+      </p>
+      <div class="about-content-wrapper">
+        <p class="about-content-title">Players must:</p>
+        <p class="about-content-text">
+          The objective is to guide the current from its source to sacred
+          endpoints without overflow or interruption. We wanted to mix that
+          organic, natural look with puzzle mechanics that actually make sense.
+        </p>
+        <ul class="about-list">
+          <li class="about-list-item">
+            <p class="about-item-text">Rotate stone blocks</p>
+          </li>
+          <li class="about-list-item">
+            <p class="about-item-text">Slide terrain slabs</p>
+          </li>
+          <li class="about-list-item">
+            <p class="about-item-text">Open sealed gates</p>
+          </li>
+          <li class="about-list-item">
+            <p class="about-item-text">Redirect elemental streams</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section gameplay-section" id="gameplay">
+  <div class="gameplay-bg-wrapper">
+    <div class="container gameplay-container">
+      <div class="gameplay-top-content-wrapper">
+        <div class="gameplay-top-text-wrapper">
+          <h2 class="section-title gameplay-title">How to Play</h2>
+          <ul class="gameplay-list">
+            <li class="gameplay-list-item">
+              <svg class="gameplay-icon" width="32" height="32">
+                <use href="/stonecurrent/assets/sprite-201b558d.svg#icon-gameplay1"></use>
+              </svg>
+              <div class="gameplay-item-text-wrapper">
+                <h3 class="gameplay-item-title">Study the Terrain</h3>
+                <p class="gameplay-item-text">
+                  Look at the stone plateau and understand the layout.<br />
+                  Find where the current begins and where it must reach.
+                </p>
+              </div>
+            </li>
+            <li class="gameplay-list-item">
+              <svg class="gameplay-icon" width="32" height="32">
+                <use href="/stonecurrent/assets/sprite-201b558d.svg#icon-gameplay2"></use>
+              </svg>
+              <div class="gameplay-item-text-wrapper">
+                <h3 class="gameplay-item-title">Shape the Path</h3>
+                <p class="gameplay-item-text">
+                  Move and rotate stone segments to create a continuous channel.
+                </p>
+              </div>
+            </li>
+            <li class="gameplay-list-item">
+              <svg class="gameplay-icon" width="32" height="32">
+                <use href="/stonecurrent/assets/sprite-201b558d.svg#icon-gameplay3"></use>
+              </svg>
+              <div class="gameplay-item-text-wrapper">
+                <h3 class="gameplay-item-title">Activate the Flow</h3>
+                <p class="gameplay-item-text">
+                  Flip the switch and watch the current travel through the
+                  carved paths.
+                </p>
+              </div>
+            </li>
+            <li class="gameplay-list-item">
+              <svg class="gameplay-icon" width="32" height="32">
+                <use href="/stonecurrent/assets/sprite-201b558d.svg#icon-gameplay4"></use>
+              </svg>
+              <div class="gameplay-item-text-wrapper">
+                <h3 class="gameplay-item-title">Refine the Structure</h3>
+                <p class="gameplay-item-text">
+                  If the current breaks, adjust the stone layout and try again.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <picture>
+          <source
+            srcset="/stonecurrent/assets/gameplay-img1-desk-4afd06dc.png "
+            media="(min-width: 1440px)"
+            width="640"
+            height="423" />
+          <source
+            srcset="/stonecurrent/assets/gameplay-img1-mob-8a9d19f7.png "
+            width="343"
+            height="227" />
+          <img
+            class="gameplay-img1"
+            src="/stonecurrent/assets/gameplay-img1-mob-8a9d19f7.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="227"
+            loading="lazy"
+        /></picture>
+      </div>
+      <div class="gameplay-bottom-content-wrapper">
+        <div class="gameplay-bottom-text-wrapper">
+          <h2 class="gameplay-subtitle">Advanced Challenges</h2>
+          <ul class="gameplay-bottom-list">
+            <li class="gameplay-bottom-list-item">
+              <p class="gameplay-item-text">
+                Split currents that power multiple paths
+              </p>
+            </li>
+            <li class="gameplay-bottom-list-item">
+              <p class="gameplay-item-text">
+                Pressure thresholds that require stronger flow
+              </p>
+            </li>
+            <li class="gameplay-bottom-list-item">
+              <p class="gameplay-item-text">Timed gates that open and close</p>
+            </li>
+            <li class="gameplay-bottom-list-item">
+              <p class="gameplay-item-text">
+                Multi-layer platforms with vertical connections
+              </p>
+            </li>
+          </ul>
+        </div>
+        <picture>
+          <source
+            srcset="/stonecurrent/assets/gameplay-img2-desk-efac2e54.png "
+            media="(min-width: 1440px)"
+            width="640"
+            height="482" />
+          <source
+            srcset="/stonecurrent/assets/gameplay-img2-mob-4163a67c.png "
+            width="343"
+            height="258" />
+          <img
+            class="gameplay-img2"
+            src="/stonecurrent/assets/gameplay-img2-mob-4163a67c.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="258"
+            loading="lazy"
+        /></picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="gallery-section section" id="gallery">
+  <div class="gallery-bg-wrapper">
+    <div class="container gallery-container">
+      <div class="gallery-content-wrapper">
+        <h2 class="section-title gallery-title">Visual</h2>
+        <div class="gallery-swiper-container">
+          <ul class="swiper-wrapper gallery-swiper-wrapper">
+            <li class="swiper-slide gallery-slide">
+              <picture>
+                <source
+                  srcset="/stonecurrent/assets/gallery-img1-desk-bfb883fe.png "
+                  media="(min-width: 1440px)"
+                  width="304"
+                  height="521" />
+                <source
+                  srcset="/stonecurrent/assets/gallery-img1-mob-407b480b.png "
+                  width="343"
+                  height="480" />
+                <img
+                  class="gallery-img"
+                  src="/stonecurrent/assets/gallery-img1-mob-407b480b.png"
+                  alt="Screenshot of the game"
+                  width="343"
+                  height="480"
+                  loading="lazy"
+              /></picture>
+            </li>
+            <li class="swiper-slide gallery-slide">
+              <picture>
+                <source
+                  srcset="/stonecurrent/assets/gallery-img2-desk-13110220.png "
+                  media="(min-width: 1440px)"
+                  width="640"
+                  height="522" />
+                <source
+                  srcset="/stonecurrent/assets/gallery-img2-mob-ad1c52e9.png "
+                  width="343"
+                  height="480" />
+                <img
+                  class="gallery-img"
+                  src="/stonecurrent/assets/gallery-img2-mob-ad1c52e9.png"
+                  alt="Screenshot of the game"
+                  width="343"
+                  height="480"
+                  loading="lazy"
+              /></picture>
+            </li>
+            <li class="swiper-slide gallery-slide">
+              <picture>
+                <source
+                  srcset="/stonecurrent/assets/gallery-img3-desk-4882a4e6.png "
+                  media="(min-width: 1440px)"
+                  width="304"
+                  height="521" />
+                <source
+                  srcset="/stonecurrent/assets/gallery-img3-mob-8287e83e.png "
+                  width="343"
+                  height="480" />
+                <img
+                  class="gallery-img"
+                  src="/stonecurrent/assets/gallery-img3-mob-8287e83e.png"
+                  alt="Screenshot of the game"
+                  width="343"
+                  height="480"
+                  loading="lazy"
+              /></picture>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section features-section" id="features">
+  <div class="features-bg-wrapper">
+    <div class="container features-container">
+      <div class="features-content-wrapper">
+        <h2 class="section-title features-title">Features</h2>
+        <p class="features-subtitle">
+          Everything we built ties back to that core idea of manipulating these
+          ancient stone systems.
+        </p>
+        <ul class="features-list">
+          <li class="features-list-item">
+            <img
+              class="features-img"
+              src="/stonecurrent/assets/features-img1-621ebac0.png"
+              alt="Screenshot of the game"
+              width="96"
+              height="115"
+              loading="lazy"
+            />
+            <h3 class="features-item-title">Shape the Terrain</h3>
+            <p class="features-item-text">
+              Move, rotate, and slide ancient stone segments to reshape the
+              terrain and create new pathways for the current.
+            </p>
+          </li>
+          <li class="features-list-item">
+            <img
+              class="features-img"
+              src="/stonecurrent/assets/features-img2-18aab40c.png"
+              alt="Screenshot of the game"
+              width="96"
+              height="115"
+              loading="lazy"
+            />
+            <h3 class="features-item-title">Control the Flow</h3>
+            <p class="features-item-text">
+              Guide the living current through carved channels and branching
+              paths to power the ancient structures.
+            </p>
+          </li>
+          <li class="features-list-item">
+            <img
+              class="features-img"
+              src="/stonecurrent/assets/features-img3-920fc6bc.png"
+              alt="Screenshot of the game"
+              width="96"
+              height="115"
+              loading="lazy"
+            />
+            <h3 class="features-item-title">Solve Dynamic Puzzles</h3>
+            <p class="features-item-text">
+              Each level introduces new mechanics like split currents, pressure
+              limits, and unexpected blockages.
+            </p>
+          </li>
+          <li class="features-list-item">
+            <img
+              class="features-img"
+              src="/stonecurrent/assets/features-img4-4c5fdad6.png"
+              alt="Screenshot of the game"
+              width="96"
+              height="115"
+              loading="lazy"
+            />
+            <h3 class="features-item-title">Progress Through Ancient Sites</h3>
+            <p class="features-item-text">
+              Explore ancient locations as puzzles become more challenging.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section uniqueness-section" id="uniqueness">
+  <div class="uniqueness-bg-wrapper">
+    <div class="container uniqueness-container">
+      <h2 class="section-title">Uniqueness</h2>
+      <p class="uniqueness-subtitle">
+        Playing it feels like you're working with something that's been around
+        forever, and every move matters.
+      </p>
+      <div class="uniqueness-content-wrapper">
+        <p class="uniqueness-content-title">
+          Unlike standard pipe-connection puzzles:
+        </p>
+        <ul class="uniqueness-list">
+          <li class="uniqueness-list-item">
+            <p class="uniqueness-item-text">Terrain feels heavy and physical</p>
+          </li>
+          <li class="uniqueness-list-item">
+            <p class="uniqueness-item-text">
+              Channels are carved, not mechanical
+            </p>
+          </li>
+          <li class="uniqueness-list-item">
+            <p class="uniqueness-item-text">Flow reacts to terrain elevation</p>
+          </li>
+          <li class="uniqueness-list-item">
+            <p class="uniqueness-item-text">
+              Visual transformation occurs when endpoints activate
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section benefits-section" id="benefits">
+  <div class="benefits-bg-wrapper">
+    <div class="container benefits-container">
+      <div class="benefits-content-wrapper">
+        <div class="benefits-text-wrapper">
+          <h2 class="section-title benefits-title">Benefits</h2>
+          <p class="benefits-subtitle">
+            It'll definitely make you think through problems step by step. It's
+            not a rush job — you can take your time and really think things
+            through.
+          </p>
+        </div>
+        <picture>
+          <source
+            srcset="/stonecurrent/assets/benefits-img-desk-11889629.png "
+            media="(min-width: 1440px)"
+            width="640"
+            height="182" />
+          <source
+            srcset="/stonecurrent/assets/benefits-img-mob-c43c36f6.png "
+            width="343"
+            height="656" />
+          <img
+            class="benefits-img"
+            src="/stonecurrent/assets/benefits-img-mob-c43c36f6.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="656"
+            loading="lazy"
+        /></picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section faq-section" id="faq">
+  <div class="faq-bg-wrapper">
+    <div class="container faq-container">
+      <div class="faq-content-wrapper">
+        <h2 class="section-title faq-title">FAQ</h2>
+        <ul class="faq-list">
+          <li class="faq-list-item">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">Is this a fast-paced game?</span>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/stonecurrent/assets/sprite-201b558d.svg#icon-arrow-down"></use></svg
+              ></span>
+            </button>
+            <p class="faq-bottom-text">No. It is methodical and strategic.</p>
+          </li>
+          <li class="faq-list-item">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">Is physics involved?</span>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/stonecurrent/assets/sprite-201b558d.svg#icon-arrow-down"></use></svg
+              ></span>
+            </button>
+            <p class="faq-bottom-text">
+              Flow behavior responds to channel structure.
+            </p>
+          </li>
+          <li class="faq-list-item">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">Does difficulty increase?</span>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/stonecurrent/assets/sprite-201b558d.svg#icon-arrow-down"></use></svg
+              ></span>
+            </button>
+            <p class="faq-bottom-text">
+              Yes. New mechanics unlock progressively.
+            </p>
+          </li>
+          <li class="faq-list-item">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text"
+                >Is it suitable for casual players?</span
+              >
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/stonecurrent/assets/sprite-201b558d.svg#icon-arrow-down"></use></svg
+              ></span>
+            </button>
+            <p class="faq-bottom-text">Yes, with increasing challenge depth.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section contact-section" id="contact">
+  <div class="contact-bg-wrapper">
+    <div class="container contact-container">
+      <div class="contact-content-wrapper">
+        <div class="contact-text-wrapper">
+          <h2 class="section-title contact-title">Contact</h2>
+          <a href="mailto:info@stonecurrent.site" class="contact-link">
+            <span>info@stonecurrent.site</span>
+            <svg class="contact-icon" width="24" height="24">
+              <use href="/stonecurrent/assets/sprite-201b558d.svg#icon-email"></use>
+            </svg>
+          </a>
+        </div>
+        <picture>
+          <source
+            srcset="/stonecurrent/assets/contact-img-desk-33f4af71.png "
+            media="(min-width: 1440px)"
+            width="720"
+            height="542" />
+          <source
+            srcset="/stonecurrent/assets/contact-img-mob-60270cb5.png "
+            width="343"
+            height="258" />
+          <img
+            class="contact-img"
+            src="/stonecurrent/assets/contact-img-mob-60270cb5.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="258"
+            loading="lazy"
+        /></picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="footer">
+  <div class="container footer-container">
+    <nav class="footer-nav">
+      <ul class="footer-list">
+        <li class="footer-list-item">
+          <a class="footer-link" href="./privacy-policy.html">Privacy Policy</a>
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-link" href="./terms-and-conditions.html"
+            >Terms and Conditions</a
+          >
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-link" href="./cookies-policy.html">Cookies Policy</a>
+        </li>
+      </ul>
+    </nav>
+    <p class="footer-text">© 2026 stonecurrent.site — All rights reserved</p>
+  </div>
+</footer>
+
+    <section id="cookie-banner" class="cookie-banner-section">
+  <div class="cookie-banner-wrapper">
+    <p class="cookie-banner-text">
+      We use cookies to enhance your experience while using our website. By
+      continuing to use this site, you consent to our use of cookies.
+    </p>
+    <div class="cookie-banner-buttons">
+      <button class="cookie-accept-btn" id="cookie-accept">Accept</button>
+      <button class="cookie-decline-btn" id="cookie-decline">Reject</button>
+    </div>
+  </div>
+</section>
+
+
+    
+  </body>
+</html>
