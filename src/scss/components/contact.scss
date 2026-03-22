@@ -1,0 +1,78 @@
+.contact-section {
+  @include media(desktop) {
+  }
+}
+
+.contact-bg-wrapper {
+  padding-top: 64px;
+  padding-bottom: 80px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    max-width: 1440px;
+  }
+}
+
+.contact-container {
+  @include media(desktop) {
+  }
+}
+
+.contact-content-wrapper {
+  border: 1px solid #787566;
+  border-radius: 40px;
+  padding: 88px 16px;
+  width: 100%;
+  background-image: url(../img/contact/contact-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media(desktop) {
+    padding: 67px 40px;
+    background-image: url(../img/contact/contact-bg-desk.png);
+  }
+}
+
+.contact-title-wrapper {
+  width: 100%;
+
+  @include media(desktop) {
+    max-width: 420px;
+    margin-bottom: 24px;
+  }
+}
+
+.contact-subtitle {
+  width: 100%;
+
+  @include media(desktop) {
+  }
+}
+
+.contact-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f2f2f2;
+  word-break: break-all;
+  max-width: max-content;
+
+  @include media(desktop) {
+    font-size: 34px;
+  }
+}
